@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login Acessível</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+</head>
+<body>
+    <main class="container">
+        <div class="login-container">
+            <div class="login-header">
+                <h1>Bem-vindo</h1>
+                <p>Por favor, faça login para continuar</p>
+            </div>
+            
+            <form class="login-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        class="form-input" 
+                        placeholder="Seu email" 
+                        required 
+                        aria-required="true"
+                    >
+                </div>
+                
+                <div class="form-group">
+                    <label for="password" class="form-label">Senha</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        class="form-input" 
+                        placeholder="Sua senha" 
+                        required 
+                        aria-required="true"
+                    >
+                </div>
+                
+                <div class="form-options">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Lembrar-me</label>
+                    </div>
+                    <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                </div>
+                
+                <button type="submit" class="login-button">Entrar</button>
+                
+                <div class="register-link">
+                    <p>Não tem uma conta? <a href="#">Registre-se</a></p>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
